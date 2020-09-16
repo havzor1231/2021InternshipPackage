@@ -21,11 +21,11 @@ URLS = [URL_g1, URL_l4, URL_l3, URL_l6, URL_l8, URL_l9]
 
 # Fill in this dictionary with your personal details!
 JOB_APP = {
-    "first_name": "Foo",
-    "last_name": "Bar",
-    "email": "test@test.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "johndoe@gmail.com",
     "phone": "123-456-7890",
-    "org": "Self-Employed",
+    "org": "FAANGULTAD",
     "resume": "resume.pdf",
     "resume_textfile": "resume_short.txt",
     "linkedin": "https://www.linkedin.com/",
@@ -35,7 +35,7 @@ JOB_APP = {
     "location": "San Francisco, California, United States",
     "grad_month": '06',
     "grad_year": '2021',
-    "university": "MIT" # if only o.O
+    "university": "Barvard" 
 }
 
 # Greenhouse has a different application form structure than Lever, and thus must be parsed differently
@@ -68,7 +68,7 @@ def greenhouse(driver):
         for line in lines:
             resume_zone.send_keys(line.decode('utf-8'))
 
-    # add linkedin
+    # tries linkedin twice
     try:
         driver.find_element_by_xpath("//label[contains(.,'LinkedIn')]").send_keys(JOB_APP['linkedin'])
     except NoSuchElementException:
@@ -77,31 +77,31 @@ def greenhouse(driver):
         except NoSuchElementException:
             pass
 
-    # add graduation year
+    # grad year (dropdown menu)
     try:
         driver.find_element_by_xpath("//select/option[text()='2021']").click()
     except NoSuchElementException:
         pass
 
-    # add university
+    # add university (dropdown menu)
     try:
         driver.find_element_by_xpath("//select/option[contains(.,'Harvard')]").click()
     except NoSuchElementException:
         pass
 
-    # add degree
+    # add degree (dropdown menu)
     try:
         driver.find_element_by_xpath("//select/option[contains(.,'Bachelor')]").click()
     except NoSuchElementException:
         pass
 
-    # add major
+    # add major (dropdown menu)
     try:
         driver.find_element_by_xpath("//select/option[contains(.,'Computer Science')]").click()
     except NoSuchElementException:
         pass
 
-    # add website
+    # add website 
     try:
         driver.find_element_by_xpath("//label[contains(.,'Website')]").send_keys(JOB_APP['website'])
     except NoSuchElementException:
@@ -123,16 +123,16 @@ def lever(driver):
     # basic info
     first_name = JOB_APP['first_name']
     last_name = JOB_APP['last_name']
-    full_name = first_name + ' ' + last_name  # f string didn't work here, but that's the ideal thing to do
+    full_name = first_name + ' ' + last_name  
     driver.find_element_by_name('name').send_keys(full_name)
     driver.find_element_by_name('email').send_keys(JOB_APP['email'])
     driver.find_element_by_name('phone').send_keys(JOB_APP['phone'])
     driver.find_element_by_name('org').send_keys(JOB_APP['org'])
 
-    # socials
+    # social media
     driver.find_element_by_name('urls[LinkedIn]').send_keys(JOB_APP['linkedin'])
     driver.find_element_by_name('urls[Twitter]').send_keys(JOB_APP['twitter'])
-    try: # try both versions
+    try: # try both ways
         driver.find_element_by_name('urls[Github]').send_keys(JOB_APP['github'])
     except NoSuchElementException:
         try:
@@ -150,14 +150,14 @@ def lever(driver):
     except NoSuchElementException:
         pass
 
-    # add how you found out about the company
+    # how you found out about the company
     try:
         driver.find_element_by_class_name('application-dropdown').click()
         search = driver.find_element_by_xpath("//select/option[text()='Glassdoor']").click()
     except NoSuchElementException:
         pass
 
-    # submit resume last so it doesn't auto-fill the rest of the form
+    # submit resume last to avoid auto-fill of form
     # since Lever has a clickable file-upload, it's easier to pass it into the webpage
     driver.find_element_by_name('resume').send_keys(os.getcwd()+"/resume.pdf")
     driver.find_element_by_class_name('template-btn-submit').click()
@@ -195,6 +195,6 @@ if __name__ == '__main__':
             # print(f"NOT A VALID APP LINK FOR {url}")
             continue
 
-        time.sleep(1) # can lengthen this as necessary (for captcha, for example)
+        time.sleep(5) # time for captcha
 
     driver.close()
