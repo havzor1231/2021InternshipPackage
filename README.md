@@ -1,11 +1,10 @@
 # Summer 2021 Internships ☀️👩‍💻
-Use this repo to share and keep track of any tech-related internships. For a [Google Sheet 📝 version of this repo (that remains in sync with this table) click here](https://docs.google.com/spreadsheets/d/1bJq7YQV19TWyzPCBeQi5P4uOm8uiAAm2AHCnVNGRIDg/edit#gid=0)! For more tips on the internship process check out the [Zero to Offer 📈 program here](https://www.pittcs.wiki/zero-to-offer).
+Use this repo to share and keep track of any tech-related internships. I also pushed a script that automatically applies to greenhouse.io and lever applications using Selenium. 
 
-🎓 Check out our New Grad repo [here](https://github.com/Pitt-CSC/NewGrad-2021).
+## Using apply.py 
+1. Fill out JOB_APP with your personal information. View resume adivce in zipped folder by your one and only Musky, and replace the file with your actual resume after. Also import your resume as a text file into the folder, and change the name to resume_text (or vice versa). I think the rest of the information is pretty self-explanatory, but feel free to message me with any questions, concerns, or bugs. Have fun!
 
-🤗 **Contribute by submitting a [pull request](https://github.com/susam/gitpr#create-pull-request) or [filling out this form](https://bit.ly/3d5O76c)!**  🤗
-
-## The List 👔
+## The List (Probs not going to be updated super frequently, so feel free to run the program on your own OS :) )
 
 | Name  |  Location |  Notes |
 |---|---|-------------|
@@ -227,79 +226,3 @@ Use this repo to share and keep track of any tech-related internships. For a [Go
 |[NextDoor](https://about.nextdoor.com/careers-list/?gh_jid=2337637) | SF | |
 |[Gusto](https://boards.greenhouse.io/gusto/jobs/2315797) | SF, Devner, NYC | |
 |[Dick's](https://www.dickssportinggoods.jobs/jobs/11371261/software-engineering-intern-summer-2021-coraopolis-pa/?src=PittCSC) | Pittsburgh | |
-
-Huge shout-out to our contributors! Fill [this survey](https://bit.ly/3d5O76c), make a [Pull Request](https://github.com/susam/gitpr#create-pull-request), or submit [an issue](https://github.com/Pitt-CSC/Summer2021-Internships/issues) if you'd like to contribute too! 🙏
-* [warfororks](https://github.com/warfororks)
-* [5CoolKids](https://github.com/5CoolKids)
-* [wcygan](https://github.com/wcygan)
-* [phucks0612](https://github.com/phucks0612)
-* [slingam00](https://github.com/slingam00)
-* [spencerng](https://github.com/spencerng)
-* [julianzhao0101](https://github.com/julianzhao0101)
-* [Gopal6600](https://github.com/Gopal6600)
-* [arpansahoo](https://github.com/arpansahoo)
-* [gabriel-flynn](https://github.com/gabriel-flynn)
-* [arjun-dureja](https://github.com/arjun-dureja)
-* [simranthomas](https://github.com/simranthomas)
-* [noo-rain](https://github.com/noo-rain)
-* [anishganti](https://github.com/anishganti)
-* [ApurvShah007](https://github.com/ApurvShah007)
-* [Sherlemious](https://github.com/Sherlemious)
-* [JackGoldsworth](https://github.com/JackGoldsworth)
-* [anh212](https://github.com/anh212)
-* [Abhishek-AC](https://github.com/Abhishek-AC)
-* [agamjolly](https://github.com/agamjolly)
-* [iiradia](https://github.com/iiradia)
-* [baoalvin1](https://github.com/baoalvin1)
-* [qhb1001](https://github.com/qhb1001)
-* [bwaits2](https://github.com/bwaits2)
-* [garciajess](https://github.com/garciajess)
-* [zejunliu](https://github.com/zejunliu)
-* [coffeeologist](https://github.com/coffeeologist)
-* [rashmi-ravishankar](https://github.com/rashmi-ravishankar)
-* [BaruYogesh](https://github.com/BaruYogesh)
-* [samjoffe](https://github.com/samjoffe)
-* [nchan9](https://github.com/nchan9)
-* [greyfertich](https://github.com/greyfertich)
-* [shubhra-bedi](https://github.com/shubhra-bedi)
-* [zarif98](https://github.com/zarif98)
-* [tuankiet65](https://github.com/tuankiet65)
-* [Priyandubey](https://github.com/Priyandubey)
-* [FerruccioSisti](https://github.com/FerruccioSisti)
-* [MattChen2000](https://github.com/MattChen2000)
-* [jain1407](https://github.com/jain1407)
-* [gitgm3hta](https://github.com/gitgm3hta)
-* [justnguyen1](https://github.com/justnguyen1)
-* [SahasGoli](https://github.com/SahasGoli)
-* [trhiana](https://github.com/trhiana)
-* [aaronw4ng](https://github.com/aaronw4ng)
-* [rohit-ganguly](https://github.com/rohit-ganguly)
-* [azharichenko](https://github.com/azharichenko)
-* [varughese](https://github.com/varughese)
-* [zmwang622](https://github.com/zmwang622)
-* [rubywerman](https://github.com/rubywerman)
-* [stefantobler](https://stefantobler.com)
-* [danerwilliams](https://github.com/danerwilliams)
-* [ankasengupta](https://github.com/ankasengupta)
-* [kimjuyounglisa](https://github.com/kimjuyounglisa)
-* [Leundai](https://github.com/Leundai)
-* [aidev1065](https://github.com/aidev1065)
-* [zhixiangteoh](https://github.com/zhixiangteoh)
-* [christopherhui](https://github.com/christopherhui)
-* [jamiepinheiro](https://github.com/jamiepinheiro)
-* [michaelfromyeg](https://github.com/michaelfromyeg)
-* [tuankiet65](https://github.com/tuankiet65)
-* [StefanTobler](https://github.com/StefanTobler)
-* [SahilSudhir](https://github.com/Pantharex)
-* [Sahir1234](https://github.com/Sahir1234)
-* [mneskovic](https://github.com/mneskovic)
-* [prithvikannan](https://github.com/prithvikannan)
-* [sunschong](https://github.com/sunschong)
-* [priyansdesai](https://github.com/priyansdesai)
-* [carolksun](https://github.com/carolksun)
-* [amanuel2](https://github.com/amanuel2)
-* [camless](https://github.com/camless)
-* [ayoung19](https://github.com/ayoung19)
-* [aabosh](https://github.com/aabosh)
-
-Thanks to [elaine-zheng](https://github.com/elaine-zheng/summer2020internships) for the inspiration! 🐐
