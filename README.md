@@ -2,7 +2,7 @@
 Use this repo to share and keep track of any tech-related internships. I also pushed a script that automatically applies to greenhouse.io and lever applications using Selenium. 
 
 ## Using apply.py 
-Fill out JOB_APP with your personal information. View resume adivce in zipped folder by your one and only Musky, and replace the file with your actual resume after. Also import your resume as a text file into the folder, and change the name to resume_text (or vice versa). I think the rest of the information is pretty self-explanatory, but feel free to message me with any questions, concerns, or bugs. Have fun!
+Fill out JOB_APP with your personal information. View resume adivce in zipped folder by your one and only ~Musky~, and replace the file with your actual resume after. Also import your resume as a text file into the folder, and change the name to resume_text (or vice versa). I think the rest of the information is pretty self-explanatory, but feel free to message me with any questions, concerns, or bugs. Have fun!
 
 ## The List (Probs not going to be updated super frequently, so feel free to run the program on your own OS :) )
 
